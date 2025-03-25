@@ -14,7 +14,7 @@ file_path = './dados_funcionais_patenteadores.xlsx'
 df = pd.read_excel(file_path)
 
 # Selecione a coluna alvo e as variáveis de entrada
-target_column = 'Relationship between standards / personal values'  # Altere para o nome da última coluna
+target_column = 'Nature of motivation'  # Altere para o nome da última coluna
 X = df.drop(columns=[target_column])
 y = df[target_column]
 
